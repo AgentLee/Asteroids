@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1811150989221116}
+  m_RootGameObject: {fileID: 1703194746535826}
   m_IsPrefabParent: 1
---- !u!1 &1811150989221116
+--- !u!1 &1703194746535826
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4773697664465234}
-  - component: {fileID: 198187494905803104}
-  - component: {fileID: 199113430563428074}
+  - component: {fileID: 4312920148372588}
+  - component: {fileID: 198600261688689690}
+  - component: {fileID: 199130047457176192}
   m_Layer: 0
   m_Name: ExplosionPrefab
   m_TagString: Untagged
@@ -28,25 +28,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4773697664465234
+--- !u!4 &4312920148372588
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1811150989221116}
+  m_GameObject: {fileID: 1703194746535826}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &198187494905803104
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!198 &198600261688689690
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1811150989221116}
+  m_GameObject: {fileID: 1703194746535826}
   serializedVersion: 5
   lengthInSec: 0.1
   simulationSpeed: 1
@@ -100,7 +100,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1322384018
+  randomSeed: -1732104510
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -739,8 +739,13 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    m_BurstCount: 0
-    m_Bursts: []
+    m_BurstCount: 1
+    m_Bursts:
+    - time: 0
+      minCount: 30
+      maxCount: 30
+      cycleCount: 1
+      repeatInterval: 0.01
   SizeModule:
     enabled: 0
     curve:
@@ -994,7 +999,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -3303,13 +3308,13 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
---- !u!199 &199113430563428074
+--- !u!199 &199130047457176192
 ParticleSystemRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1811150989221116}
+  m_GameObject: {fileID: 1703194746535826}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

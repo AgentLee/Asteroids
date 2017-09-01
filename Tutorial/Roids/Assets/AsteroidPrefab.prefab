@@ -193,5 +193,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointValue: 0
   deathKnell: {fileID: 8300000, guid: 8ee33e0a176e9d54d914b12eb71e8007, type: 3}
-  deathExplosion: {fileID: 1811150989221116, guid: 79718b7f80cb131419898665317109c1,
+  deathExplosion: {fileID: 1703194746535826, guid: ee3d40b023446d846964bbba0b728499,
     type: 2}
